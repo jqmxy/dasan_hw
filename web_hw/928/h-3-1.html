@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Document</title>
+    <script>
+        radius = prompt("请输入圆的半径", "")
+        function myfunction() {
+            alert("圆的周长是" + 2 * Math.PI * radius + "，圆的面积是" + Math.PI * radius * radius);
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <input type="text" onfocus=alert('请输入圆的半径') onblur="myfunction()">
+
+</body>
+
+</html>

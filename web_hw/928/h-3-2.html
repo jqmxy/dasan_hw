@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function f1() {
+            alert("请输入半径");
+        }
+
+        function f() {
+            var radius = document.getElementById("data").innerHTML;
+            
+            alert("圆的周长是" + 2 * Math.PI * radius + "，圆的面积是" + Math.PI * radius * radius);
+        }
+    </script>
+</head>
+
+<body>
+    <input name="data" id="data" type="text" onblur="f()" />
+
+</body>
+
+</html>
